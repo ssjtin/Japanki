@@ -15,6 +15,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupNotifications()
+        let factory = CardFactory()
+        factory.getTestCards()
     }
     
     private func setupNotifications() {

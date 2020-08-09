@@ -12,5 +12,6 @@ struct Card: Decodable, Identifiable {
     
     var frontText: String
     var backText: String
-    var memoryScore: Int
+    var lastSeen: Date
+    var boxNumber: Int
 }
