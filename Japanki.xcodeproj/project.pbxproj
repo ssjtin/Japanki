@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B40681E24DEB95B00D2B428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40681D24DEB95B00D2B428 /* AppDelegate.swift */; };
+		9B40682024DEB95B00D2B428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40681F24DEB95B00D2B428 /* SceneDelegate.swift */; };
+		9B40682224DEB95B00D2B428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40682124DEB95B00D2B428 /* ViewController.swift */; };
+		9B40682524DEB95B00D2B428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B40682324DEB95B00D2B428 /* Main.storyboard */; };
+		9B40682724DEB95B00D2B428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B40682624DEB95B00D2B428 /* Assets.xcassets */; };
+		9B40682A24DEB95B00D2B428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B40682824DEB95B00D2B428 /* LaunchScreen.storyboard */; };
+		9B40683524DEB95B00D2B428 /* JapankiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40683424DEB95B00D2B428 /* JapankiTests.swift */; };
+		9B40684024DEB95C00D2B428 /* JapankiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40683F24DEB95C00D2B428 /* JapankiUITests.swift */; };
+		9B40684F24DEBA4900D2B428 /* HiraganaConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40684E24DEBA4900D2B428 /* HiraganaConverter.swift */; };
+		9B40685024DEBA4900D2B428 /* HiraganaConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40684E24DEBA4900D2B428 /* HiraganaConverter.swift */; };
+		9B40685224DEC87000D2B428 /* JapaneseEnglishConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */; };
+		9B40685324DEC87000D2B428 /* JapaneseEnglishConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */; };
+		9BB76D6324DFD3510091CFFB /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BB76D6224DFD3510091CFFB /* Test.json */; };
+		9BB76D6424DFD3510091CFFB /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BB76D6224DFD3510091CFFB /* Test.json */; };
+		9BB76D6624DFD82F0091CFFB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6524DFD82F0091CFFB /* Card.swift */; };
+		9BB76D6724DFD82F0091CFFB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6524DFD82F0091CFFB /* Card.swift */; };
+		9BB76D6A24DFD9B30091CFFB /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6924DFD9B30091CFFB /* CardFactory.swift */; };
+		9BB76D6B24DFD9B30091CFFB /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6924DFD9B30091CFFB /* CardFactory.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B40683124DEB95B00D2B428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B40681224DEB95A00D2B428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B40681924DEB95A00D2B428;
+			remoteInfo = Japanki;
+		};
+		9B40683C24DEB95B00D2B428 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B40681224DEB95A00D2B428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B40681924DEB95A00D2B428;
+			remoteInfo = Japanki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B40681A24DEB95B00D2B428 /* Japanki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Japanki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B40681D24DEB95B00D2B428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B40681F24DEB95B00D2B428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B40682124DEB95B00D2B428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B40682424DEB95B00D2B428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B40682624DEB95B00D2B428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B40682924DEB95B00D2B428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B40682B24DEB95B00D2B428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B40683024DEB95B00D2B428 /* JapankiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapankiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B40683424DEB95B00D2B428 /* JapankiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapankiTests.swift; sourceTree = "<group>"; };
+		9B40683624DEB95B00D2B428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B40683B24DEB95B00D2B428 /* JapankiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JapankiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B40683F24DEB95C00D2B428 /* JapankiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapankiUITests.swift; sourceTree = "<group>"; };
+		9B40684124DEB95C00D2B428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B40684E24DEBA4900D2B428 /* HiraganaConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverter.swift; sourceTree = "<group>"; };
+		9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseEnglishConverter.swift; sourceTree = "<group>"; };
+		9BB76D6224DFD3510091CFFB /* Test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
+		9BB76D6524DFD82F0091CFFB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9BB76D6924DFD9B30091CFFB /* CardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFactory.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B40681724DEB95A00D2B428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B40682D24DEB95B00D2B428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B40683824DEB95B00D2B428 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B40681124DEB95A00D2B428 = {
+			isa = PBXGroup;
+			children = (
+				9B40681C24DEB95B00D2B428 /* Japanki */,
+				9B40683324DEB95B00D2B428 /* JapankiTests */,
+				9B40683E24DEB95C00D2B428 /* JapankiUITests */,
+				9B40681B24DEB95B00D2B428 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B40681B24DEB95B00D2B428 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B40681A24DEB95B00D2B428 /* Japanki.app */,
+				9B40683024DEB95B00D2B428 /* JapankiTests.xctest */,
+				9B40683B24DEB95B00D2B428 /* JapankiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B40681C24DEB95B00D2B428 /* Japanki */ = {
+			isa = PBXGroup;
+			children = (
+				9B40681D24DEB95B00D2B428 /* AppDelegate.swift */,
+				9B40684D24DEBA1500D2B428 /* Services */,
+				9BB76D6824DFD8330091CFFB /* Models */,
+				9B40681F24DEB95B00D2B428 /* SceneDelegate.swift */,
+				9B40682124DEB95B00D2B428 /* ViewController.swift */,
+				9B40682324DEB95B00D2B428 /* Main.storyboard */,
+				9B40682624DEB95B00D2B428 /* Assets.xcassets */,
+				9B40682824DEB95B00D2B428 /* LaunchScreen.storyboard */,
+				9B40682B24DEB95B00D2B428 /* Info.plist */,
+			);
+			path = Japanki;
+			sourceTree = "<group>";
+		};
+		9B40683324DEB95B00D2B428 /* JapankiTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B40683424DEB95B00D2B428 /* JapankiTests.swift */,
+				9B40683624DEB95B00D2B428 /* Info.plist */,
+			);
+			path = JapankiTests;
+			sourceTree = "<group>";
+		};
+		9B40683E24DEB95C00D2B428 /* JapankiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B40683F24DEB95C00D2B428 /* JapankiUITests.swift */,
+				9B40684124DEB95C00D2B428 /* Info.plist */,
+			);
+			path = JapankiUITests;
+			sourceTree = "<group>";
+		};
+		9B40684D24DEBA1500D2B428 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9B40684E24DEBA4900D2B428 /* HiraganaConverter.swift */,
+				9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */,
+				9BB76D6924DFD9B30091CFFB /* CardFactory.swift */,
+				9BB76D6224DFD3510091CFFB /* Test.json */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9BB76D6824DFD8330091CFFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9BB76D6524DFD82F0091CFFB /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B40681924DEB95A00D2B428 /* Japanki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B40684424DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "Japanki" */;
+			buildPhases = (
+				9B40681624DEB95A00D2B428 /* Sources */,
+				9B40681724DEB95A00D2B428 /* Frameworks */,
+				9B40681824DEB95A00D2B428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Japanki;
+			productName = Japanki;
+			productReference = 9B40681A24DEB95B00D2B428 /* Japanki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B40682F24DEB95B00D2B428 /* JapankiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B40684724DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "JapankiTests" */;
+			buildPhases = (
+				9B40682C24DEB95B00D2B428 /* Sources */,
+				9B40682D24DEB95B00D2B428 /* Frameworks */,
+				9B40682E24DEB95B00D2B428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B40683224DEB95B00D2B428 /* PBXTargetDependency */,
+			);
+			name = JapankiTests;
+			productName = JapankiTests;
+			productReference = 9B40683024DEB95B00D2B428 /* JapankiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B40683A24DEB95B00D2B428 /* JapankiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B40684A24DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "JapankiUITests" */;
+			buildPhases = (
+				9B40683724DEB95B00D2B428 /* Sources */,
+				9B40683824DEB95B00D2B428 /* Frameworks */,
+				9B40683924DEB95B00D2B428 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B40683D24DEB95B00D2B428 /* PBXTargetDependency */,
+			);
+			name = JapankiUITests;
+			productName = JapankiUITests;
+			productReference = 9B40683B24DEB95B00D2B428 /* JapankiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B40681224DEB95A00D2B428 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					9B40681924DEB95A00D2B428 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					9B40682F24DEB95B00D2B428 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 9B40681924DEB95A00D2B428;
+					};
+					9B40683A24DEB95B00D2B428 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 9B40681924DEB95A00D2B428;
+					};
+				};
+			};
+			buildConfigurationList = 9B40681524DEB95A00D2B428 /* Build configuration list for PBXProject "Japanki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B40681124DEB95A00D2B428;
+			productRefGroup = 9B40681B24DEB95B00D2B428 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B40681924DEB95A00D2B428 /* Japanki */,
+				9B40682F24DEB95B00D2B428 /* JapankiTests */,
+				9B40683A24DEB95B00D2B428 /* JapankiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B40681824DEB95A00D2B428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B40682A24DEB95B00D2B428 /* LaunchScreen.storyboard in Resources */,
+				9BB76D6324DFD3510091CFFB /* Test.json in Resources */,
+				9B40682724DEB95B00D2B428 /* Assets.xcassets in Resources */,
+				9B40682524DEB95B00D2B428 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B40682E24DEB95B00D2B428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB76D6424DFD3510091CFFB /* Test.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B40683924DEB95B00D2B428 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B40681624DEB95A00D2B428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B40685224DEC87000D2B428 /* JapaneseEnglishConverter.swift in Sources */,
+				9BB76D6624DFD82F0091CFFB /* Card.swift in Sources */,
+				9B40682224DEB95B00D2B428 /* ViewController.swift in Sources */,
+				9BB76D6A24DFD9B30091CFFB /* CardFactory.swift in Sources */,
+				9B40684F24DEBA4900D2B428 /* HiraganaConverter.swift in Sources */,
+				9B40681E24DEB95B00D2B428 /* AppDelegate.swift in Sources */,
+				9B40682024DEB95B00D2B428 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B40682C24DEB95B00D2B428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B40685324DEC87000D2B428 /* JapaneseEnglishConverter.swift in Sources */,
+				9B40683524DEB95B00D2B428 /* JapankiTests.swift in Sources */,
+				9B40685024DEBA4900D2B428 /* HiraganaConverter.swift in Sources */,
+				9BB76D6B24DFD9B30091CFFB /* CardFactory.swift in Sources */,
+				9BB76D6724DFD82F0091CFFB /* Card.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B40683724DEB95B00D2B428 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B40684024DEB95C00D2B428 /* JapankiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B40683224DEB95B00D2B428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B40681924DEB95A00D2B428 /* Japanki */;
+			targetProxy = 9B40683124DEB95B00D2B428 /* PBXContainerItemProxy */;
+		};
+		9B40683D24DEB95B00D2B428 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B40681924DEB95A00D2B428 /* Japanki */;
+			targetProxy = 9B40683C24DEB95B00D2B428 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B40682324DEB95B00D2B428 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B40682424DEB95B00D2B428 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B40682824DEB95B00D2B428 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B40682924DEB95B00D2B428 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B40684224DEB95C00D2B428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B40684324DEB95C00D2B428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B40684524DEB95C00D2B428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49H596ZHS6;
+				INFOPLIST_FILE = Japanki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoangluong.Japanki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9B40684624DEB95C00D2B428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49H596ZHS6;
+				INFOPLIST_FILE = Japanki/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoangluong.Japanki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9B40684824DEB95C00D2B428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49H596ZHS6;
+				INFOPLIST_FILE = JapankiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoangluong.JapankiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Japanki.app/Japanki";
+			};
+			name = Debug;
+		};
+		9B40684924DEB95C00D2B428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49H596ZHS6;
+				INFOPLIST_FILE = JapankiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoangluong.JapankiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Japanki.app/Japanki";
+			};
+			name = Release;
+		};
+		9B40684B24DEB95C00D2B428 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49H596ZHS6;
+				INFOPLIST_FILE = JapankiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoangluong.JapankiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Japanki;
+			};
+			name = Debug;
+		};
+		9B40684C24DEB95C00D2B428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 49H596ZHS6;
+				INFOPLIST_FILE = JapankiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hoangluong.JapankiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Japanki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B40681524DEB95A00D2B428 /* Build configuration list for PBXProject "Japanki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B40684224DEB95C00D2B428 /* Debug */,
+				9B40684324DEB95C00D2B428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B40684424DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "Japanki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B40684524DEB95C00D2B428 /* Debug */,
+				9B40684624DEB95C00D2B428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B40684724DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "JapankiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B40684824DEB95C00D2B428 /* Debug */,
+				9B40684924DEB95C00D2B428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B40684A24DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "JapankiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B40684B24DEB95C00D2B428 /* Debug */,
+				9B40684C24DEB95C00D2B428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B40681224DEB95A00D2B428 /* Project object */;
+}

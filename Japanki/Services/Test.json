@@ -1,0 +1,44 @@
+[
+  {
+      "id" : "230k-23k2l",
+      "frontText" : "平等",
+      "backText" : "Equality",
+      "memoryScore" : 66
+  },
+  {
+      "id" : "230k-23k2l",
+      "frontText" : "明日中には国境を越えます",
+      "backText" : "We'll be across the border by tomorrow",
+      "memoryScore" : 80
+  },
+  {
+      "id" : "230k-23k2l",
+      "frontText" : "悪循環",
+      "backText" : "Vicous cycle",
+      "memoryScore" : 66
+  },
+  {
+      "id" : "230k-23k2l",
+      "frontText" : "噂",
+      "backText" : "Rumour, gossip",
+      "memoryScore" : 54
+  },
+  {
+      "id" : "230k-23k2l",
+      "frontText" : "彼女は極秘で私にその話をした",
+      "backText" : "She told me the story in absolute confidence",
+      "memoryScore" : 33
+  },
+  {
+      "id" : "230k-23k2l",
+      "frontText" : "黙秘権",
+      "backText" : "Right to remain silent",
+      "memoryScore" : 66
+  },
+  {
+      "id" : "230k-23k2l",
+      "frontText" : "幸福への秘訣",
+      "backText" : "Secret/key to happiness",
+      "memoryScore" : 95
+  }
+]
