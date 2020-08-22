@@ -70,7 +70,7 @@ class DeckBreakdownController: UICollectionViewController, UICollectionViewDeleg
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath) as! CardCell
         
-        cell.textLabel.text = selectedDeck.cards[indexPath.row].frontText
+        cell.configure(for: selectedDeck.cards[indexPath.row])
         
         return cell
     }

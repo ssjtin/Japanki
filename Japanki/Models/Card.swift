@@ -21,6 +21,10 @@ class Card: Object, Decodable, Identifiable {
         return "id"
     }
     
+    var isDue: Bool {
+        return nextDue < Date()
+    }
+    
     func updateBoxNumber(success: Bool) {
         if success {
             boxNumber = min(numberOfCardBoxes, boxNumber + 1)

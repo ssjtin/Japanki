@@ -145,6 +145,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8ECBED5D24F125620079CBFD /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				9B11F20F24EBEBAB005F1F89 /* Localized.stringsdict */,
+				9B11F20C24EBEBA0005F1F89 /* Localized.strings */,
+				9B11F20824EBE972005F1F89 /* Localized.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		9B11F1F524E94CF4005F1F89 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,12 +221,10 @@
 			isa = PBXGroup;
 			children = (
 				9B40681D24DEB95B00D2B428 /* AppDelegate.swift */,
-				9B11F20F24EBEBAB005F1F89 /* Localized.stringsdict */,
-				9B11F20C24EBEBA0005F1F89 /* Localized.strings */,
-				9B11F20824EBE972005F1F89 /* Localized.swift */,
+				9B40681F24DEB95B00D2B428 /* SceneDelegate.swift */,
+				8ECBED5D24F125620079CBFD /* Localization */,
 				9B40684D24DEBA1500D2B428 /* Services */,
 				9BB76D6824DFD8330091CFFB /* Models */,
-				9B40681F24DEB95B00D2B428 /* SceneDelegate.swift */,
 				9B11F1F524E94CF4005F1F89 /* Controllers */,
 				9B11F1FC24E96019005F1F89 /* Extensions */,
 				9B40682624DEB95B00D2B428 /* Assets.xcassets */,

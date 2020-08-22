@@ -14,9 +14,7 @@ protocol NewCardDelegate: class {
 class NewCardController: UIViewController {
     
     @IBOutlet weak var frontTextView: UITextView!
-    
     @IBOutlet weak var backTextView: UITextView!
-    
     @IBOutlet weak var deleteCardButton: UIButton!
     
     var currentEditingDeck: Deck?
@@ -27,6 +25,8 @@ class NewCardController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        frontTextView.delegate = self
+        backTextView.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
