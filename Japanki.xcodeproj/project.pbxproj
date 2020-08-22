@@ -7,9 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B11F1EC24E837F9005F1F89 /* NewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F1EB24E837F9005F1F89 /* NewCardController.swift */; };
+		9B11F1EE24E8A1E2005F1F89 /* NewCardController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11F1ED24E8A1E2005F1F89 /* NewCardController.storyboard */; };
+		9B11F1F024E90C6C005F1F89 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F1EF24E90C6C005F1F89 /* Deck.swift */; };
+		9B11F1F224E90FAE005F1F89 /* StudySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F1F124E90FAE005F1F89 /* StudySession.swift */; };
+		9B11F1F424E94BF9005F1F89 /* DeckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F1F324E94BF9005F1F89 /* DeckController.swift */; };
+		9B11F1F724E94D17005F1F89 /* Deck.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11F1F624E94D17005F1F89 /* Deck.storyboard */; };
+		9B11F1F924E9568E005F1F89 /* DeckBreakdownController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F1F824E9568E005F1F89 /* DeckBreakdownController.swift */; };
+		9B11F1FB24E95FF3005F1F89 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F1FA24E95FF3005F1F89 /* UIViewController+Extension.swift */; };
+		9B11F1FF24E9606B005F1F89 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C141024E808FF00BD4343 /* RealmService.swift */; };
+		9B11F20124E9610E005F1F89 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F20024E9610E005F1F89 /* CardCell.swift */; };
+		9B11F20324E9619C005F1F89 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B11F20224E9619C005F1F89 /* CardCell.xib */; };
+		9B11F20924EBE972005F1F89 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F20824EBE972005F1F89 /* Localized.swift */; };
+		9B11F20A24EBEBA0005F1F89 /* Localized.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B11F20C24EBEBA0005F1F89 /* Localized.strings */; };
+		9B11F20D24EBEBAB005F1F89 /* Localized.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 9B11F20F24EBEBAB005F1F89 /* Localized.stringsdict */; };
 		9B40681E24DEB95B00D2B428 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40681D24DEB95B00D2B428 /* AppDelegate.swift */; };
 		9B40682024DEB95B00D2B428 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40681F24DEB95B00D2B428 /* SceneDelegate.swift */; };
-		9B40682224DEB95B00D2B428 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40682124DEB95B00D2B428 /* ViewController.swift */; };
+		9B40682224DEB95B00D2B428 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40682124DEB95B00D2B428 /* MenuController.swift */; };
 		9B40682524DEB95B00D2B428 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B40682324DEB95B00D2B428 /* Main.storyboard */; };
 		9B40682724DEB95B00D2B428 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B40682624DEB95B00D2B428 /* Assets.xcassets */; };
 		9B40682A24DEB95B00D2B428 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B40682824DEB95B00D2B428 /* LaunchScreen.storyboard */; };
@@ -19,12 +33,18 @@
 		9B40685024DEBA4900D2B428 /* HiraganaConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40684E24DEBA4900D2B428 /* HiraganaConverter.swift */; };
 		9B40685224DEC87000D2B428 /* JapaneseEnglishConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */; };
 		9B40685324DEC87000D2B428 /* JapaneseEnglishConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */; };
+		9B4D06E324E80E2A0052CEF4 /* StudyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4D06E224E80E2A0052CEF4 /* StudyController.swift */; };
+		9B5C141124E808FF00BD4343 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5C141024E808FF00BD4343 /* RealmService.swift */; };
 		9BB76D6324DFD3510091CFFB /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BB76D6224DFD3510091CFFB /* Test.json */; };
 		9BB76D6424DFD3510091CFFB /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BB76D6224DFD3510091CFFB /* Test.json */; };
 		9BB76D6624DFD82F0091CFFB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6524DFD82F0091CFFB /* Card.swift */; };
 		9BB76D6724DFD82F0091CFFB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6524DFD82F0091CFFB /* Card.swift */; };
 		9BB76D6A24DFD9B30091CFFB /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6924DFD9B30091CFFB /* CardFactory.swift */; };
 		9BB76D6B24DFD9B30091CFFB /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6924DFD9B30091CFFB /* CardFactory.swift */; };
+		9BE0370324E828C500130CAE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4D06D924E809B00052CEF4 /* Realm.framework */; };
+		9BE0370424E828C500130CAE /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4D06D924E809B00052CEF4 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9BE0370624E828C900130CAE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4D06DD24E809BD0052CEF4 /* RealmSwift.framework */; };
+		9BE0370724E828C900130CAE /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4D06DD24E809BD0052CEF4 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,11 +64,39 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9BE0370524E828C500130CAE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9BE0370724E828C900130CAE /* RealmSwift.framework in Embed Frameworks */,
+				9BE0370424E828C500130CAE /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9B11F1EB24E837F9005F1F89 /* NewCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardController.swift; sourceTree = "<group>"; };
+		9B11F1ED24E8A1E2005F1F89 /* NewCardController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCardController.storyboard; sourceTree = "<group>"; };
+		9B11F1EF24E90C6C005F1F89 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		9B11F1F124E90FAE005F1F89 /* StudySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySession.swift; sourceTree = "<group>"; };
+		9B11F1F324E94BF9005F1F89 /* DeckController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckController.swift; sourceTree = "<group>"; };
+		9B11F1F624E94D17005F1F89 /* Deck.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deck.storyboard; sourceTree = "<group>"; };
+		9B11F1F824E9568E005F1F89 /* DeckBreakdownController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckBreakdownController.swift; sourceTree = "<group>"; };
+		9B11F1FA24E95FF3005F1F89 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		9B11F20024E9610E005F1F89 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		9B11F20224E9619C005F1F89 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
+		9B11F20824EBE972005F1F89 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		9B11F20B24EBEBA0005F1F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localized.strings; sourceTree = "<group>"; };
+		9B11F20E24EBEBAB005F1F89 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localized.stringsdict; sourceTree = "<group>"; };
 		9B40681A24DEB95B00D2B428 /* Japanki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Japanki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B40681D24DEB95B00D2B428 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B40681F24DEB95B00D2B428 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B40682124DEB95B00D2B428 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B40682124DEB95B00D2B428 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		9B40682424DEB95B00D2B428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B40682624DEB95B00D2B428 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B40682924DEB95B00D2B428 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +109,10 @@
 		9B40684124DEB95C00D2B428 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B40684E24DEBA4900D2B428 /* HiraganaConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiraganaConverter.swift; sourceTree = "<group>"; };
 		9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JapaneseEnglishConverter.swift; sourceTree = "<group>"; };
+		9B4D06D924E809B00052CEF4 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		9B4D06DD24E809BD0052CEF4 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		9B4D06E224E80E2A0052CEF4 /* StudyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyController.swift; sourceTree = "<group>"; };
+		9B5C141024E808FF00BD4343 /* RealmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
 		9BB76D6224DFD3510091CFFB /* Test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
 		9BB76D6524DFD82F0091CFFB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9BB76D6924DFD9B30091CFFB /* CardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFactory.swift; sourceTree = "<group>"; };
@@ -71,6 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BE0370624E828C900130CAE /* RealmSwift.framework in Frameworks */,
+				9BE0370324E828C500130CAE /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +145,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B11F1F524E94CF4005F1F89 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9B40682324DEB95B00D2B428 /* Main.storyboard */,
+				9B40682124DEB95B00D2B428 /* MenuController.swift */,
+				9B11F1FD24E9603E005F1F89 /* Decks */,
+				9B4D06E224E80E2A0052CEF4 /* StudyController.swift */,
+				9B11F1FE24E96052005F1F89 /* New Card */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9B11F1FC24E96019005F1F89 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9B11F1FA24E95FF3005F1F89 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B11F1FD24E9603E005F1F89 /* Decks */ = {
+			isa = PBXGroup;
+			children = (
+				9B11F1F324E94BF9005F1F89 /* DeckController.swift */,
+				9B11F1F824E9568E005F1F89 /* DeckBreakdownController.swift */,
+				9B11F20024E9610E005F1F89 /* CardCell.swift */,
+				9B11F20224E9619C005F1F89 /* CardCell.xib */,
+				9B11F1F624E94D17005F1F89 /* Deck.storyboard */,
+			);
+			path = Decks;
+			sourceTree = "<group>";
+		};
+		9B11F1FE24E96052005F1F89 /* New Card */ = {
+			isa = PBXGroup;
+			children = (
+				9B11F1EB24E837F9005F1F89 /* NewCardController.swift */,
+				9B11F1ED24E8A1E2005F1F89 /* NewCardController.storyboard */,
+			);
+			path = "New Card";
+			sourceTree = "<group>";
+		};
 		9B40681124DEB95A00D2B428 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +193,7 @@
 				9B40683324DEB95B00D2B428 /* JapankiTests */,
 				9B40683E24DEB95C00D2B428 /* JapankiUITests */,
 				9B40681B24DEB95B00D2B428 /* Products */,
+				9B4D06D824E809B00052CEF4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,11 +211,14 @@
 			isa = PBXGroup;
 			children = (
 				9B40681D24DEB95B00D2B428 /* AppDelegate.swift */,
+				9B11F20F24EBEBAB005F1F89 /* Localized.stringsdict */,
+				9B11F20C24EBEBA0005F1F89 /* Localized.strings */,
+				9B11F20824EBE972005F1F89 /* Localized.swift */,
 				9B40684D24DEBA1500D2B428 /* Services */,
 				9BB76D6824DFD8330091CFFB /* Models */,
 				9B40681F24DEB95B00D2B428 /* SceneDelegate.swift */,
-				9B40682124DEB95B00D2B428 /* ViewController.swift */,
-				9B40682324DEB95B00D2B428 /* Main.storyboard */,
+				9B11F1F524E94CF4005F1F89 /* Controllers */,
+				9B11F1FC24E96019005F1F89 /* Extensions */,
 				9B40682624DEB95B00D2B428 /* Assets.xcassets */,
 				9B40682824DEB95B00D2B428 /* LaunchScreen.storyboard */,
 				9B40682B24DEB95B00D2B428 /* Info.plist */,
@@ -148,6 +247,7 @@
 		9B40684D24DEBA1500D2B428 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				9B5C141024E808FF00BD4343 /* RealmService.swift */,
 				9B40684E24DEBA4900D2B428 /* HiraganaConverter.swift */,
 				9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */,
 				9BB76D6924DFD9B30091CFFB /* CardFactory.swift */,
@@ -156,10 +256,21 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		9B4D06D824E809B00052CEF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B4D06DD24E809BD0052CEF4 /* RealmSwift.framework */,
+				9B4D06D924E809B00052CEF4 /* Realm.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9BB76D6824DFD8330091CFFB /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				9BB76D6524DFD82F0091CFFB /* Card.swift */,
+				9B11F1EF24E90C6C005F1F89 /* Deck.swift */,
+				9B11F1F124E90FAE005F1F89 /* StudySession.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +285,8 @@
 				9B40681624DEB95A00D2B428 /* Sources */,
 				9B40681724DEB95A00D2B428 /* Frameworks */,
 				9B40681824DEB95A00D2B428 /* Resources */,
+				9BE0370524E828C500130CAE /* Embed Frameworks */,
+				9BE0370824E828EB00130CAE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -267,10 +380,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B11F20D24EBEBAB005F1F89 /* Localized.stringsdict in Resources */,
 				9B40682A24DEB95B00D2B428 /* LaunchScreen.storyboard in Resources */,
 				9BB76D6324DFD3510091CFFB /* Test.json in Resources */,
+				9B11F1EE24E8A1E2005F1F89 /* NewCardController.storyboard in Resources */,
+				9B11F20324E9619C005F1F89 /* CardCell.xib in Resources */,
 				9B40682724DEB95B00D2B428 /* Assets.xcassets in Resources */,
+				9B11F20A24EBEBA0005F1F89 /* Localized.strings in Resources */,
 				9B40682524DEB95B00D2B428 /* Main.storyboard in Resources */,
+				9B11F1F724E94D17005F1F89 /* Deck.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +409,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BE0370824E828EB00130CAE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B40681624DEB95A00D2B428 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -298,11 +438,21 @@
 			files = (
 				9B40685224DEC87000D2B428 /* JapaneseEnglishConverter.swift in Sources */,
 				9BB76D6624DFD82F0091CFFB /* Card.swift in Sources */,
-				9B40682224DEB95B00D2B428 /* ViewController.swift in Sources */,
+				9B11F1F224E90FAE005F1F89 /* StudySession.swift in Sources */,
+				9B11F20124E9610E005F1F89 /* CardCell.swift in Sources */,
+				9B11F20924EBE972005F1F89 /* Localized.swift in Sources */,
+				9B11F1FB24E95FF3005F1F89 /* UIViewController+Extension.swift in Sources */,
+				9B40682224DEB95B00D2B428 /* MenuController.swift in Sources */,
 				9BB76D6A24DFD9B30091CFFB /* CardFactory.swift in Sources */,
+				9B11F1F424E94BF9005F1F89 /* DeckController.swift in Sources */,
+				9B11F1F924E9568E005F1F89 /* DeckBreakdownController.swift in Sources */,
 				9B40684F24DEBA4900D2B428 /* HiraganaConverter.swift in Sources */,
 				9B40681E24DEB95B00D2B428 /* AppDelegate.swift in Sources */,
+				9B11F1EC24E837F9005F1F89 /* NewCardController.swift in Sources */,
 				9B40682024DEB95B00D2B428 /* SceneDelegate.swift in Sources */,
+				9B4D06E324E80E2A0052CEF4 /* StudyController.swift in Sources */,
+				9B11F1F024E90C6C005F1F89 /* Deck.swift in Sources */,
+				9B5C141124E808FF00BD4343 /* RealmService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B40685324DEC87000D2B428 /* JapaneseEnglishConverter.swift in Sources */,
+				9B11F1FF24E9606B005F1F89 /* RealmService.swift in Sources */,
 				9B40683524DEB95B00D2B428 /* JapankiTests.swift in Sources */,
 				9B40685024DEBA4900D2B428 /* HiraganaConverter.swift in Sources */,
 				9BB76D6B24DFD9B30091CFFB /* CardFactory.swift in Sources */,
@@ -342,6 +493,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9B11F20C24EBEBA0005F1F89 /* Localized.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B11F20B24EBEBA0005F1F89 /* en */,
+			);
+			name = Localized.strings;
+			sourceTree = "<group>";
+		};
+		9B11F20F24EBEBAB005F1F89 /* Localized.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B11F20E24EBEBAB005F1F89 /* en */,
+			);
+			name = Localized.stringsdict;
+			sourceTree = "<group>";
+		};
 		9B40682324DEB95B00D2B428 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -412,7 +579,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -467,7 +634,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -484,12 +651,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49H596ZHS6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Japanki/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hoangluong.Japanki;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chungtin.japanki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -503,12 +674,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49H596ZHS6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Japanki/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hoangluong.Japanki;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chungtin.japanki;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -1,0 +1,9 @@
+/* 
+  Localized.strings
+  Japanki
+
+  Created by Hoang Luong on 18/8/20.
+  
+*/
+
+"dueCardsString" = "%@ due";

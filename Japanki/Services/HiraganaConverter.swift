@@ -9,6 +9,8 @@ import Foundation
 
 class HiraganaConverter {
     
+    static let shared = HiraganaConverter()
+    
     private let url = URL(string: "https://labs.goo.ne.jp/api/hiragana")!
     private let app_id = "825ddbe87edf55fe3b3f069de2cb51473352b375a19347037802ccc263c881e3"
     private let session = URLSession.shared

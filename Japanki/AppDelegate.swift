@@ -5,16 +5,41 @@
 //  Created by Hoang Luong on 8/8/20.
 //
 
+import RealmSwift
 import UIKit
 
-@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        if UserDefaults.standard.bool(forKey: "test") != true {
+            UserDefaults.standard.setValue(true, forKey: "test")
+            
+            let factory = CardFactory()
+            let cards = factory.getTestCards()
+            
+            let testDeck = Deck()
+            testDeck.cards.append(objectsIn: cards)
+            testDeck.id = UUID().uuidString
+            testDeck.name = "Test Deck"
+            
+            RealmService.shared.write(testDeck)
+        }
+        
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(
+            self,
+            selector: #selector(appMovedToForeground),
+            name: UIApplication.willEnterForegroundNotification, object: nil)
+        
         return true
+    }
+    
+    @objc private func appMovedToForeground() {
+        if let copyString = UIPasteboard.general.string {
+            //  Returned to app with copied text, ask to create a new card
+            print(copyString)
+        }
     }
 
     // MARK: UISceneSession Lifecycle

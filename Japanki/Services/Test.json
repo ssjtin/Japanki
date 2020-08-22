@@ -1,51 +1,58 @@
 [
   {
-      "id" : "230k-23k2l",
+      "id" : "sf323f",
       "frontText" : "平等",
       "backText" : "Equality",
       "lastSeen" : "2009-05-06T18:56:38.367",
+      "nextDue" : "2009-05-07T18:56:38.367",
       "boxNumber" : 1
   },
   {
-      "id" : "230k-23k2l",
+      "id" : "230kwsf2l",
       "frontText" : "明日中には国境を越えます",
       "backText" : "We'll be across the border by tomorrow",
       "lastSeen" : "2009-05-06T18:56:38.367",
+      "nextDue" : "2009-05-07T18:56:38.367",
       "boxNumber" : 1
   },
   {
-      "id" : "230k-23k2l",
+      "id" : "230g3fk-23k2l",
       "frontText" : "悪循環",
       "backText" : "Vicous cycle",
       "lastSeen" : "2009-05-06T18:56:38.367",
+      "nextDue" : "2009-05-07T18:56:38.367",
       "boxNumber" : 1
   },
   {
-      "id" : "230k-23k2l",
+      "id" : "2344422l",
       "frontText" : "噂",
       "backText" : "Rumour, gossip",
       "lastSeen" : "2009-05-06T18:56:38.367",
+      "nextDue" : "2009-05-07T18:56:38.367",
       "boxNumber" : 1
   },
   {
-      "id" : "230k-23k2l",
+      "id" : "230d455223k2l",
       "frontText" : "彼女は極秘で私にその話をした",
       "backText" : "She told me the story in absolute confidence",
       "lastSeen" : "2009-05-06T18:56:38.367",
+      "nextDue" : "2009-05-07T18:56:38.367",
       "boxNumber" : 1
   },
   {
-      "id" : "230k-23k2l",
+      "id" : "230k2449k2l",
       "frontText" : "黙秘権",
       "backText" : "Right to remain silent",
       "lastSeen" : "2009-05-06T18:56:38.367",
+      "nextDue" : "2009-05-07T18:56:38.367",
       "boxNumber" : 1
   },
   {
-      "id" : "230k-23k2l",
+      "id" : "231452223k2l",
       "frontText" : "幸福への秘訣",
       "backText" : "Secret/key to happiness",
       "lastSeen" : "2009-05-06T18:56:38.367",
+      "nextDue" : "2009-05-07T18:56:38.367",
       "boxNumber" : 1
   }
 ]

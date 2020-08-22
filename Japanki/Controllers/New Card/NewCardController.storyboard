@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17115"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--New Card Controller-->
+        <scene sceneID="6nm-ih-dk3">
+            <objects>
+                <viewController storyboardIdentifier="newCardController" id="pfr-Se-oPW" customClass="NewCardController" customModule="Japanki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="54h-ul-3R8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some text goes here for the front" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qU7-wk-2C9">
+                                <rect key="frame" x="20" y="423" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="8yp-zx-maN"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Some text goes here for the front" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dgm-8D-axO">
+                                <rect key="frame" x="20" y="523" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="S8K-Ax-sRx"/>
+                                    <constraint firstAttribute="height" constant="50" id="UxM-l7-5pA"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sav-bS-0AX">
+                                <rect key="frame" x="95" y="789" width="224" height="53"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JbW-yn-ZhR">
+                                        <rect key="frame" x="0.0" y="0.0" width="102" height="53"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" red="0.51426150879999999" green="1" blue="0.50223765809999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="saveButtonClicked:" destination="pfr-Se-oPW" eventType="touchUpInside" id="Fed-b4-qUj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ea3-kG-hB3">
+                                        <rect key="frame" x="122" y="0.0" width="102" height="53"/>
+                                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.91077093909999995" green="0.068074147109999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="cancelButtonClicked:" destination="pfr-Se-oPW" eventType="touchUpInside" id="E4V-3y-Lso"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALA-CH-LpR">
+                                <rect key="frame" x="295" y="94" width="94" height="33"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <state key="normal" title="Delete Card"/>
+                                <connections>
+                                    <action selector="deleteCardClicked:" destination="pfr-Se-oPW" eventType="touchUpInside" id="yBK-lZ-rlu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zvS-ed-gCN"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="sav-bS-0AX" firstAttribute="centerX" secondItem="54h-ul-3R8" secondAttribute="centerX" id="17x-Fg-sCe"/>
+                            <constraint firstItem="Dgm-8D-axO" firstAttribute="top" secondItem="qU7-wk-2C9" secondAttribute="bottom" constant="50" id="Eme-sL-wgg"/>
+                            <constraint firstItem="Dgm-8D-axO" firstAttribute="leading" secondItem="zvS-ed-gCN" secondAttribute="leading" constant="20" id="K2L-Wa-76q"/>
+                            <constraint firstItem="zvS-ed-gCN" firstAttribute="bottom" secondItem="sav-bS-0AX" secondAttribute="bottom" constant="20" id="KpS-eC-HIS"/>
+                            <constraint firstItem="qU7-wk-2C9" firstAttribute="centerX" secondItem="54h-ul-3R8" secondAttribute="centerX" id="MiT-oL-ugs"/>
+                            <constraint firstItem="qU7-wk-2C9" firstAttribute="centerY" secondItem="54h-ul-3R8" secondAttribute="centerY" id="NjR-VZ-PIs"/>
+                            <constraint firstItem="qU7-wk-2C9" firstAttribute="leading" secondItem="zvS-ed-gCN" secondAttribute="leading" constant="20" id="dBt-Ib-rVU"/>
+                            <constraint firstItem="zvS-ed-gCN" firstAttribute="trailing" secondItem="qU7-wk-2C9" secondAttribute="trailing" constant="20" id="dKN-RB-dlk"/>
+                            <constraint firstItem="zvS-ed-gCN" firstAttribute="trailing" secondItem="ALA-CH-LpR" secondAttribute="trailing" constant="25" id="lz7-Eg-EzN"/>
+                            <constraint firstItem="ALA-CH-LpR" firstAttribute="top" secondItem="zvS-ed-gCN" secondAttribute="top" constant="50" id="sgH-ZR-YRa"/>
+                            <constraint firstItem="zvS-ed-gCN" firstAttribute="trailing" secondItem="Dgm-8D-axO" secondAttribute="trailing" constant="20" id="zUv-TH-JQS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backTextView" destination="Dgm-8D-axO" id="d0e-Nk-NTE"/>
+                        <outlet property="deleteCardButton" destination="ALA-CH-LpR" id="2Iw-I5-tGW"/>
+                        <outlet property="frontTextView" destination="qU7-wk-2C9" id="PdO-N7-hE3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Ev-9Q-MO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="129"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
