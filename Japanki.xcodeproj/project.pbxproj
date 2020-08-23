@@ -10,6 +10,9 @@
 		4916916B854BD0033D44BBE6 /* Pods_Japanki_JapankiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B566FA92D4A4D174D9E668B /* Pods_Japanki_JapankiUITests.framework */; };
 		4AB31ECF9CDD8B6040266590 /* Pods_Japanki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353B848A20A8020DC2A2625 /* Pods_Japanki.framework */; };
 		8E4B05B024F2364300014ADA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B05AF24F2364300014ADA /* GoogleService-Info.plist */; };
+		8EA183A424F26322005502DB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA183A324F26322005502DB /* FirebaseService.swift */; };
+		8EA183A624F2775E005502DB /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA183A524F2775E005502DB /* LoginController.swift */; };
+		8EA183A824F27766005502DB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EA183A724F27766005502DB /* Login.storyboard */; };
 		8EE69C6324F1387A0026373A /* AppOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE69C6224F1387A0026373A /* AppOptions.swift */; };
 		8EE69C6524F1EADB0026373A /* OptionsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE69C6424F1EADB0026373A /* OptionsController.storyboard */; };
 		8EE69C6724F1EAEA0026373A /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE69C6624F1EAEA0026373A /* OptionsController.swift */; };
@@ -81,6 +84,9 @@
 		8E4B05BA24F238C500014ADA /* FirebaseFunctions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFunctions.framework; path = Carthage/Build/iOS/FirebaseFunctions.framework; sourceTree = "<group>"; };
 		8E4B05BD24F238CB00014ADA /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Carthage/Build/iOS/FirebaseMessaging.framework; sourceTree = "<group>"; };
 		8E4B05C024F2395E00014ADA /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
+		8EA183A324F26322005502DB /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		8EA183A524F2775E005502DB /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		8EA183A724F27766005502DB /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		8EE69C6224F1387A0026373A /* AppOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOptions.swift; sourceTree = "<group>"; };
 		8EE69C6424F1EADB0026373A /* OptionsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OptionsController.storyboard; sourceTree = "<group>"; };
 		8EE69C6624F1EAEA0026373A /* OptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
@@ -191,6 +197,8 @@
 				9B40682324DEB95B00D2B428 /* Main.storyboard */,
 				9B40682124DEB95B00D2B428 /* MenuController.swift */,
 				9B4D06E224E80E2A0052CEF4 /* StudyController.swift */,
+				8EA183A524F2775E005502DB /* LoginController.swift */,
+				8EA183A724F27766005502DB /* Login.storyboard */,
 				9B11F1FD24E9603E005F1F89 /* Decks */,
 				9B11F1FE24E96052005F1F89 /* New Card */,
 				8EE69C6824F1EE200026373A /* Options */,
@@ -289,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				9B5C141024E808FF00BD4343 /* RealmService.swift */,
+				8EA183A324F26322005502DB /* FirebaseService.swift */,
 				9B40684E24DEBA4900D2B428 /* HiraganaConverter.swift */,
 				9B40685124DEC87000D2B428 /* JapaneseEnglishConverter.swift */,
 				9BB76D6924DFD9B30091CFFB /* CardFactory.swift */,
@@ -440,6 +449,7 @@
 				9B11F1EE24E8A1E2005F1F89 /* NewCardController.storyboard in Resources */,
 				9B11F20324E9619C005F1F89 /* CardCell.xib in Resources */,
 				9B40682724DEB95B00D2B428 /* Assets.xcassets in Resources */,
+				8EA183A824F27766005502DB /* Login.storyboard in Resources */,
 				9B11F20A24EBEBA0005F1F89 /* Localized.strings in Resources */,
 				9B40682524DEB95B00D2B428 /* Main.storyboard in Resources */,
 				8E4B05B024F2364300014ADA /* GoogleService-Info.plist in Resources */,
@@ -579,12 +589,14 @@
 				9B11F20124E9610E005F1F89 /* CardCell.swift in Sources */,
 				9B11F20924EBE972005F1F89 /* Localized.swift in Sources */,
 				9B11F1FB24E95FF3005F1F89 /* UIViewController+Extension.swift in Sources */,
+				8EA183A424F26322005502DB /* FirebaseService.swift in Sources */,
 				9B40682224DEB95B00D2B428 /* MenuController.swift in Sources */,
 				8EE69C6724F1EAEA0026373A /* OptionsController.swift in Sources */,
 				9BB76D6A24DFD9B30091CFFB /* CardFactory.swift in Sources */,
 				8EE69C6324F1387A0026373A /* AppOptions.swift in Sources */,
 				9B11F1F424E94BF9005F1F89 /* DeckController.swift in Sources */,
 				9B11F1F924E9568E005F1F89 /* DeckBreakdownController.swift in Sources */,
+				8EA183A624F2775E005502DB /* LoginController.swift in Sources */,
 				9B40684F24DEBA4900D2B428 /* HiraganaConverter.swift in Sources */,
 				9B40681E24DEB95B00D2B428 /* AppDelegate.swift in Sources */,
 				9B11F1EC24E837F9005F1F89 /* NewCardController.swift in Sources */,

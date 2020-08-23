@@ -15,6 +15,14 @@ class MenuController: UIViewController {
         super.viewDidLoad()
         
         self.title = "Japanki"
+        
+        if FirebaseService.shared.checkCurrentUser() == nil {
+            if let loginController = instantiateVC(from: "Login", id: "loginControllerID") as? LoginController {
+                loginController.modalPresentationStyle = .fullScreen
+                present(loginController, animated: true, completion: nil)
+            }
+            
+        }
     }
     
     @IBAction func optionsButtonClicked(_ sender: Any) {

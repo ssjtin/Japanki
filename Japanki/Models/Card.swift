@@ -5,6 +5,7 @@
 //  Created by Hoang Luong on 9/8/20.
 //
 
+import FirebaseFirestore
 import Foundation
 import RealmSwift
 
@@ -31,6 +32,24 @@ class Card: Object, Decodable, Identifiable {
     
     var isDue: Bool {
         return nextDue < Date()
+    }
+    
+    convenience init(data: [String: Any]) {
+        self.init()
+        
+        guard let id = data["id"] as? String,
+            let frontText = data["frontText"] as? String,
+            let backText = data["backText"] as? String,
+            let lastSeen = data["lastSeen"] as? Timestamp,
+            let nextDue = data["nextDue"] as? Timestamp,
+            let boxNumber = data["boxNumber"] as? Int else { return }
+        
+        self.id = id
+        self.frontText = frontText
+        self.backText = backText
+        self.lastSeen = lastSeen.dateValue()
+        self.nextDue = nextDue.dateValue()
+        self.boxNumber = boxNumber
     }
     
     func updateBoxNumber(success: Bool) {
