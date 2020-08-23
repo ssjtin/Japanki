@@ -7,44 +7,51 @@
 
 import RealmSwift
 import UIKit
+import FirebaseAuth
 
 class StudySession {
     
-    let numberOfCards = 10
-    
-    var currentCardIndex = 0
-    
     var deck: Deck
     
-    var dueCards = [Card]()
+    var numberOfCards = 10
+    var currentCardIndex = 0
     
-    var cardExistsAtCurrentIndex: Bool {
-        return currentCardIndex < deck.cards.count
+    //  Split all cards into due cards + non due cards
+    var dueCards = [Card]()
+    var nonDueCards = [Card]()
+    
+    var hasMoreCards: Bool {
+        return (dueCards.count + nonDueCards.count) > 1
+    }
+    
+    var currentCard: Card? {
+        return dueCards.first ?? nonDueCards.first
     }
     
     init(deck: Deck) {
         self.deck = deck
         self.dueCards = deck.cards.filter { $0.nextDue < Date() }.shuffled()
         
-        if dueCards.isEmpty, let randomCard = deck.cards.randomElement() {
-            dueCards.append(randomCard)
-        }
+        self.nonDueCards = Array(Set(deck.cards).subtracting(Set(dueCards))).shuffled()
+        
+        self.numberOfCards = max(numberOfCards, dueCards.count + nonDueCards.count)
     }
     
     func incrementCardIndex() {
         currentCardIndex += 1
-        _ = dueCards.removeFirst()
-        
-        if currentCardIndex < numberOfCards,
-           dueCards.isEmpty,
-           let randomCard = deck.cards.randomElement() {
-            //  No more due cards, add a random card to redo
-            dueCards.append(randomCard)
+        if dueCards.count > 0 {
+            dueCards.removeFirst()
+        } else if nonDueCards.count > 0 {
+            nonDueCards.removeFirst()
         }
     }
     
     func updateCurrentCard(success: Bool) {
-        RealmService.shared.update(card: dueCards.first!, in: deck, success: success)
+        if dueCards.count > 0 {
+            RealmService.shared.update(card: dueCards.first!, in: deck, success: success)
+        } else {
+            RealmService.shared.update(card: nonDueCards.first!, in: deck, success: success)
+        }
     }
     
 }

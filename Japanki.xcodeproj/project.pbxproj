@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4916916B854BD0033D44BBE6 /* Pods_Japanki_JapankiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B566FA92D4A4D174D9E668B /* Pods_Japanki_JapankiUITests.framework */; };
+		4AB31ECF9CDD8B6040266590 /* Pods_Japanki.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8353B848A20A8020DC2A2625 /* Pods_Japanki.framework */; };
+		8E4B05B024F2364300014ADA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E4B05AF24F2364300014ADA /* GoogleService-Info.plist */; };
+		8EE69C6324F1387A0026373A /* AppOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE69C6224F1387A0026373A /* AppOptions.swift */; };
+		8EE69C6524F1EADB0026373A /* OptionsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EE69C6424F1EADB0026373A /* OptionsController.storyboard */; };
+		8EE69C6724F1EAEA0026373A /* OptionsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE69C6624F1EAEA0026373A /* OptionsController.swift */; };
 		9B11F1EC24E837F9005F1F89 /* NewCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F1EB24E837F9005F1F89 /* NewCardController.swift */; };
 		9B11F1EE24E8A1E2005F1F89 /* NewCardController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B11F1ED24E8A1E2005F1F89 /* NewCardController.storyboard */; };
 		9B11F1F024E90C6C005F1F89 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B11F1EF24E90C6C005F1F89 /* Deck.swift */; };
@@ -41,10 +47,7 @@
 		9BB76D6724DFD82F0091CFFB /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6524DFD82F0091CFFB /* Card.swift */; };
 		9BB76D6A24DFD9B30091CFFB /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6924DFD9B30091CFFB /* CardFactory.swift */; };
 		9BB76D6B24DFD9B30091CFFB /* CardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB76D6924DFD9B30091CFFB /* CardFactory.swift */; };
-		9BE0370324E828C500130CAE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4D06D924E809B00052CEF4 /* Realm.framework */; };
-		9BE0370424E828C500130CAE /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4D06D924E809B00052CEF4 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9BE0370624E828C900130CAE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4D06DD24E809BD0052CEF4 /* RealmSwift.framework */; };
-		9BE0370724E828C900130CAE /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B4D06DD24E809BD0052CEF4 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CF5CF8CA366D7653552CA1BD /* Pods_JapankiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B45A70469AEF7B247C0EFD /* Pods_JapankiTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,22 +67,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9BE0370524E828C500130CAE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9BE0370724E828C900130CAE /* RealmSwift.framework in Embed Frameworks */,
-				9BE0370424E828C500130CAE /* Realm.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		3149B58D82450775339FC946 /* Pods-Japanki.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanki.release.xcconfig"; path = "Target Support Files/Pods-Japanki/Pods-Japanki.release.xcconfig"; sourceTree = "<group>"; };
+		33FF053CD77B535B0327AE90 /* Pods-JapankiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapankiTests.release.xcconfig"; path = "Target Support Files/Pods-JapankiTests/Pods-JapankiTests.release.xcconfig"; sourceTree = "<group>"; };
+		41B45A70469AEF7B247C0EFD /* Pods_JapankiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JapankiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45A194104D12D08AB82C7FDF /* Pods-JapankiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JapankiTests.debug.xcconfig"; path = "Target Support Files/Pods-JapankiTests/Pods-JapankiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B566FA92D4A4D174D9E668B /* Pods_Japanki_JapankiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanki_JapankiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8353B848A20A8020DC2A2625 /* Pods_Japanki.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanki.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E4B05AF24F2364300014ADA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E4B05B124F238B300014ADA /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Carthage/Build/iOS/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		8E4B05B224F238B300014ADA /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Carthage/Build/iOS/FirebaseAuth.framework; sourceTree = "<group>"; };
+		8E4B05B724F238BE00014ADA /* FirebaseFirestore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFirestore.framework; path = Carthage/Build/iOS/FirebaseFirestore.framework; sourceTree = "<group>"; };
+		8E4B05BA24F238C500014ADA /* FirebaseFunctions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseFunctions.framework; path = Carthage/Build/iOS/FirebaseFunctions.framework; sourceTree = "<group>"; };
+		8E4B05BD24F238CB00014ADA /* FirebaseMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseMessaging.framework; path = Carthage/Build/iOS/FirebaseMessaging.framework; sourceTree = "<group>"; };
+		8E4B05C024F2395E00014ADA /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = Carthage/Build/iOS/Firebase.framework; sourceTree = "<group>"; };
+		8EE69C6224F1387A0026373A /* AppOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppOptions.swift; sourceTree = "<group>"; };
+		8EE69C6424F1EADB0026373A /* OptionsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OptionsController.storyboard; sourceTree = "<group>"; };
+		8EE69C6624F1EAEA0026373A /* OptionsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsController.swift; sourceTree = "<group>"; };
 		9B11F1EB24E837F9005F1F89 /* NewCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCardController.swift; sourceTree = "<group>"; };
 		9B11F1ED24E8A1E2005F1F89 /* NewCardController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewCardController.storyboard; sourceTree = "<group>"; };
 		9B11F1EF24E90C6C005F1F89 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
@@ -116,6 +120,9 @@
 		9BB76D6224DFD3510091CFFB /* Test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test.json; sourceTree = "<group>"; };
 		9BB76D6524DFD82F0091CFFB /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		9BB76D6924DFD9B30091CFFB /* CardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardFactory.swift; sourceTree = "<group>"; };
+		A5F218EFFDF7B41FCF571A46 /* Pods-Japanki.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanki.debug.xcconfig"; path = "Target Support Files/Pods-Japanki/Pods-Japanki.debug.xcconfig"; sourceTree = "<group>"; };
+		DB61C28BEA87ACC024A001CF /* Pods-Japanki-JapankiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanki-JapankiUITests.debug.xcconfig"; path = "Target Support Files/Pods-Japanki-JapankiUITests/Pods-Japanki-JapankiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7BAD1E1124C780BAB928DB0 /* Pods-Japanki-JapankiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanki-JapankiUITests.release.xcconfig"; path = "Target Support Files/Pods-Japanki-JapankiUITests/Pods-Japanki-JapankiUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,8 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BE0370624E828C900130CAE /* RealmSwift.framework in Frameworks */,
-				9BE0370324E828C500130CAE /* Realm.framework in Frameworks */,
+				4AB31ECF9CDD8B6040266590 /* Pods_Japanki.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF5CF8CA366D7653552CA1BD /* Pods_JapankiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,12 +146,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4916916B854BD0033D44BBE6 /* Pods_Japanki_JapankiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		327F618DA80CAC3AAFCABD50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5F218EFFDF7B41FCF571A46 /* Pods-Japanki.debug.xcconfig */,
+				3149B58D82450775339FC946 /* Pods-Japanki.release.xcconfig */,
+				DB61C28BEA87ACC024A001CF /* Pods-Japanki-JapankiUITests.debug.xcconfig */,
+				E7BAD1E1124C780BAB928DB0 /* Pods-Japanki-JapankiUITests.release.xcconfig */,
+				45A194104D12D08AB82C7FDF /* Pods-JapankiTests.debug.xcconfig */,
+				33FF053CD77B535B0327AE90 /* Pods-JapankiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8ECBED5D24F125620079CBFD /* Localization */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,14 +176,24 @@
 			path = Localization;
 			sourceTree = "<group>";
 		};
+		8EE69C6824F1EE200026373A /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				8EE69C6424F1EADB0026373A /* OptionsController.storyboard */,
+				8EE69C6624F1EAEA0026373A /* OptionsController.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
 		9B11F1F524E94CF4005F1F89 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				9B40682324DEB95B00D2B428 /* Main.storyboard */,
 				9B40682124DEB95B00D2B428 /* MenuController.swift */,
-				9B11F1FD24E9603E005F1F89 /* Decks */,
 				9B4D06E224E80E2A0052CEF4 /* StudyController.swift */,
+				9B11F1FD24E9603E005F1F89 /* Decks */,
 				9B11F1FE24E96052005F1F89 /* New Card */,
+				8EE69C6824F1EE200026373A /* Options */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +235,7 @@
 				9B40683E24DEB95C00D2B428 /* JapankiUITests */,
 				9B40681B24DEB95B00D2B428 /* Products */,
 				9B4D06D824E809B00052CEF4 /* Frameworks */,
+				327F618DA80CAC3AAFCABD50 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -230,6 +262,7 @@
 				9B40682624DEB95B00D2B428 /* Assets.xcassets */,
 				9B40682824DEB95B00D2B428 /* LaunchScreen.storyboard */,
 				9B40682B24DEB95B00D2B428 /* Info.plist */,
+				8E4B05AF24F2364300014ADA /* GoogleService-Info.plist */,
 			);
 			path = Japanki;
 			sourceTree = "<group>";
@@ -267,8 +300,17 @@
 		9B4D06D824E809B00052CEF4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E4B05C024F2395E00014ADA /* Firebase.framework */,
+				8E4B05BD24F238CB00014ADA /* FirebaseMessaging.framework */,
+				8E4B05BA24F238C500014ADA /* FirebaseFunctions.framework */,
+				8E4B05B724F238BE00014ADA /* FirebaseFirestore.framework */,
+				8E4B05B124F238B300014ADA /* FirebaseAnalytics.framework */,
+				8E4B05B224F238B300014ADA /* FirebaseAuth.framework */,
 				9B4D06DD24E809BD0052CEF4 /* RealmSwift.framework */,
 				9B4D06D924E809B00052CEF4 /* Realm.framework */,
+				8353B848A20A8020DC2A2625 /* Pods_Japanki.framework */,
+				6B566FA92D4A4D174D9E668B /* Pods_Japanki_JapankiUITests.framework */,
+				41B45A70469AEF7B247C0EFD /* Pods_JapankiTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -279,6 +321,7 @@
 				9BB76D6524DFD82F0091CFFB /* Card.swift */,
 				9B11F1EF24E90C6C005F1F89 /* Deck.swift */,
 				9B11F1F124E90FAE005F1F89 /* StudySession.swift */,
+				8EE69C6224F1387A0026373A /* AppOptions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -290,11 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B40684424DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "Japanki" */;
 			buildPhases = (
+				6F7C171941C1B059BBEC8A65 /* [CP] Check Pods Manifest.lock */,
 				9B40681624DEB95A00D2B428 /* Sources */,
 				9B40681724DEB95A00D2B428 /* Frameworks */,
 				9B40681824DEB95A00D2B428 /* Resources */,
-				9BE0370524E828C500130CAE /* Embed Frameworks */,
-				9BE0370824E828EB00130CAE /* ShellScript */,
+				3D461AF6B7F83D76E2150E02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +352,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B40684724DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "JapankiTests" */;
 			buildPhases = (
+				B6EB1BD66CF7064A3429F985 /* [CP] Check Pods Manifest.lock */,
 				9B40682C24DEB95B00D2B428 /* Sources */,
 				9B40682D24DEB95B00D2B428 /* Frameworks */,
 				9B40682E24DEB95B00D2B428 /* Resources */,
@@ -327,9 +371,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B40684A24DEB95C00D2B428 /* Build configuration list for PBXNativeTarget "JapankiUITests" */;
 			buildPhases = (
+				EE5084938C58C98C00922B23 /* [CP] Check Pods Manifest.lock */,
 				9B40683724DEB95B00D2B428 /* Sources */,
 				9B40683824DEB95B00D2B428 /* Frameworks */,
 				9B40683924DEB95B00D2B428 /* Resources */,
+				E02D30AF95245703D180118B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -396,7 +442,9 @@
 				9B40682724DEB95B00D2B428 /* Assets.xcassets in Resources */,
 				9B11F20A24EBEBA0005F1F89 /* Localized.strings in Resources */,
 				9B40682524DEB95B00D2B428 /* Main.storyboard in Resources */,
+				8E4B05B024F2364300014ADA /* GoogleService-Info.plist in Resources */,
 				9B11F1F724E94D17005F1F89 /* Deck.storyboard in Resources */,
+				8EE69C6524F1EADB0026373A /* OptionsController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +466,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9BE0370824E828EB00130CAE /* ShellScript */ = {
+		3D461AF6B7F83D76E2150E02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Japanki/Pods-Japanki-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Japanki/Pods-Japanki-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Japanki/Pods-Japanki-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F7C171941C1B059BBEC8A65 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -426,16 +491,80 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Japanki-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EB1BD66CF7064A3429F985 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JapankiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E02D30AF95245703D180118B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Japanki-JapankiUITests/Pods-Japanki-JapankiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Japanki-JapankiUITests/Pods-Japanki-JapankiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Japanki-JapankiUITests/Pods-Japanki-JapankiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE5084938C58C98C00922B23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Japanki-JapankiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -451,7 +580,9 @@
 				9B11F20924EBE972005F1F89 /* Localized.swift in Sources */,
 				9B11F1FB24E95FF3005F1F89 /* UIViewController+Extension.swift in Sources */,
 				9B40682224DEB95B00D2B428 /* MenuController.swift in Sources */,
+				8EE69C6724F1EAEA0026373A /* OptionsController.swift in Sources */,
 				9BB76D6A24DFD9B30091CFFB /* CardFactory.swift in Sources */,
+				8EE69C6324F1387A0026373A /* AppOptions.swift in Sources */,
 				9B11F1F424E94BF9005F1F89 /* DeckController.swift in Sources */,
 				9B11F1F924E9568E005F1F89 /* DeckBreakdownController.swift in Sources */,
 				9B40684F24DEBA4900D2B428 /* HiraganaConverter.swift in Sources */,
@@ -654,6 +785,7 @@
 		};
 		9B40684524DEB95C00D2B428 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F218EFFDF7B41FCF571A46 /* Pods-Japanki.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -677,6 +809,7 @@
 		};
 		9B40684624DEB95C00D2B428 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3149B58D82450775339FC946 /* Pods-Japanki.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -700,6 +833,7 @@
 		};
 		9B40684824DEB95C00D2B428 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45A194104D12D08AB82C7FDF /* Pods-JapankiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -722,6 +856,7 @@
 		};
 		9B40684924DEB95C00D2B428 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33FF053CD77B535B0327AE90 /* Pods-JapankiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -744,6 +879,7 @@
 		};
 		9B40684B24DEB95C00D2B428 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB61C28BEA87ACC024A001CF /* Pods-Japanki-JapankiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -764,6 +900,7 @@
 		};
 		9B40684C24DEB95C00D2B428 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7BAD1E1124C780BAB928DB0 /* Pods-Japanki-JapankiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>398892338006-6vor34lpgbs091l112de24jsm067flrf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.398892338006-6vor34lpgbs091l112de24jsm067flrf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC491J4iZkMY-JmptS1MAeUxx1reFaSjKE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>398892338006</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.chungtin.japanki</string>
+	<key>PROJECT_ID</key>
+	<string>japanki-845ac</string>
+	<key>STORAGE_BUCKET</key>
+	<string>japanki-845ac.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:398892338006:ios:5dd04588918c1de903a4f7</string>
+	<key>DATABASE_URL</key>
+	<string>https://japanki-845ac.firebaseio.com</string>
+</dict>
+</plist>

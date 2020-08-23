@@ -5,6 +5,7 @@
 //  Created by Hoang Luong on 8/8/20.
 //
 
+import Firebase
 import RealmSwift
 import UIKit
 
@@ -32,6 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self,
             selector: #selector(appMovedToForeground),
             name: UIApplication.willEnterForegroundNotification, object: nil)
+        
+        FirebaseApp.configure()
         
         return true
     }

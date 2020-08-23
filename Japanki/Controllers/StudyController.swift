@@ -63,7 +63,7 @@ class StudyController: UIViewController {
     func handleCardCompleted(success: Bool) {
         studySession.updateCurrentCard(success: success)
         
-        if studySession.currentCardIndex < studySession.numberOfCards - 1 {
+        if studySession.currentCardIndex < studySession.numberOfCards - 1 && studySession.hasMoreCards {
             studySession.incrementCardIndex()
             showingSide = .Front
             updatePresentedCard()
@@ -79,7 +79,7 @@ class StudyController: UIViewController {
     }
     
     func updatePresentedCard() {
-        if let currentCard = studySession.dueCards.first {
+        if let currentCard = studySession.currentCard {
             frontLabel.text = showingSide == .Front ? currentCard.frontText : currentCard.backText
         }
     }

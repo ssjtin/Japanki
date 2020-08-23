@@ -27,6 +27,9 @@ class NewCardController: UIViewController {
         
         frontTextView.delegate = self
         backTextView.delegate = self
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(backgroundTapped))
+        view.addGestureRecognizer(tapGesture)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,6 +68,11 @@ class NewCardController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @objc private func backgroundTapped() {
+        //  Text fields resign first responder
+        view.endEditing(true)
+    }
+    
     private func saveNewCard() {
         let newCard = Card()
         newCard.frontText = frontTextView.text
@@ -88,4 +96,32 @@ class NewCardController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+}
+
+extension NewCardController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.tag == 1 {
+            if textView.text == "Front card text" {
+                textView.text = ""
+            }
+        }
+        if textView.tag == 2 {
+            if textView.text == "Reverse card text" {
+                textView.text = ""
+            }
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.tag == 1 {
+            if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                textView.text = "Front card text"
+            }
+        }
+        if textView.tag == 2 {
+            if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                textView.text = "Reverse card text"
+            }
+        }
+    }
 }

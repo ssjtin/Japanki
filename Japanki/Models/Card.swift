@@ -21,6 +21,14 @@ class Card: Object, Decodable, Identifiable {
         return "id"
     }
     
+    let boxIntervalDictionary: [Int: Int] = [
+        1 : 1,
+        2 : 2,
+        3 : 4,
+        4 : 7,
+        5 : 10
+    ]
+    
     var isDue: Bool {
         return nextDue < Date()
     }
@@ -33,5 +41,9 @@ class Card: Object, Decodable, Identifiable {
         }
         //  Update lastSeen to current date/time
         lastSeen = Date()
+        let startOfDay = Calendar.current.startOfDay(for: lastSeen)
+        nextDue = Calendar.current.date(byAdding: .day, value: boxIntervalDictionary[boxNumber] ?? 1, to: startOfDay)!
+        
+        print(nextDue)
     }
 }

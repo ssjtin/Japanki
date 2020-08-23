@@ -25,6 +25,6 @@ class CardCell: UICollectionViewCell {
     
     func configure(for card: Card) {
         textLabel.text = card.frontText
-        dueLabel.isHidden = false
+        dueLabel.isHidden = !card.isDue
     }
 }
