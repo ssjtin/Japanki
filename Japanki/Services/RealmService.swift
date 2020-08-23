@@ -17,6 +17,12 @@ class RealmService {
         self.realm = try! Realm()
     }
     
+    func clear() {
+        try! realm.write {
+            realm.deleteAll()
+        }
+    }
+    
     func fetch<T: Object>(type: T.Type) -> Results<T> {
         let objects = realm.objects(T.self)
         return objects

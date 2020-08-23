@@ -34,9 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             selector: #selector(appMovedToForeground),
             name: UIApplication.willEnterForegroundNotification, object: nil)
         
+        FirebaseConfiguration.shared.setLoggerLevel(.min)
         FirebaseApp.configure()
-        
-        try? Auth.auth().signOut()
         
         return true
     }
