@@ -1,0 +1,6 @@
+framework module Pods_Japanki_JapankiUITests {
+  umbrella header "Pods-Japanki-JapankiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
